@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #08080a !important;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #16bffd 0%,
+    #cb3066 51%,
+    #16bffd 100%
+  );
+}
+.btn-grad {
+  /* margin: 5px;
+  padding: 15px 45px; */
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+}
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change
+    here */
+  color: #fff;
+  text-decoration: none;
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+  background-color: transparent;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected a,
+.ant-menu-horizontal > .ant-menu-item a:hover {
+  color: #fff !important;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.ant-menu-item-active {
+  color: #fff !important;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255, 0.65);
+  background-color: rgb(8, 8, 10);
+}
+
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover {
+  background-color: transparent;
+}
+
+.ant-layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-width: 0;
+  background: rgb(204, 115, 253);
+  background: linear-gradient(
+    154deg,
+    rgba(204, 115, 253, 1) 0%,
+    rgba(57, 49, 103, 1) 44%,
+    rgba(34, 34, 34, 1) 100%
+  );
+}
+
+.dark-footer {
+  background: rgb(8, 8, 10);
+}
